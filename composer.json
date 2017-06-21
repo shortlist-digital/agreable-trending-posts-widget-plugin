@@ -1,0 +1,19 @@
+{
+    "name": "shortlist-digital/agreable-trending-widget-plugin",
+    "description": "A plugin for the trending widget",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shortlist Studio",
+            "email": "hi@shortlist.studio"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AgreableTrendingWidgetPlugin\\": "app/"
+        }
+    },
+    "require": {}
+}
