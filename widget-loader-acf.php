@@ -1,12 +1,12 @@
 <?php
 
-$key = 'widget_trending';
+$key = 'widget_trending_posts';
 $widgetplacement = self::$config['tab_placement'];
 
 $widget_config = array (
   'key' => $key,
-  'name' => 'trending',
-  'label' => 'Trending',
+  'name' => 'trending_posts',
+  'label' => 'Trending Posts',
   'display' => 'block',
   'sub_fields' => array (
     array (
@@ -48,24 +48,13 @@ $widget_config = array (
       'return_format' => 'object',
       'ui' => 1,
     ),
-    array (
-		'key' => $key . '_tags_manual',
-			'label' => 'Tags',
-			'name' => 'tags',
-			'type' => 'taxonomy',
-			'taxonomy' => 'post_tag',
-			'field_type' => 'multi_select',
-			'add_term' => 0,
-			'save_terms' => 0,
-			'return_format' => 'object'
-		),
-	),
 	array (
       'key' => $key . '_advanced_details_tab',
       'label' => 'Advanced Details',
       'type' => 'tab',
       'placement' => $widgetplacement,
-    ),
+    )
+  )
 );
 
 $widget_config["content-types"] = get_option("options_" . $key . "_available_post_types");
