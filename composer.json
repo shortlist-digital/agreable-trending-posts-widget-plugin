@@ -1,6 +1,6 @@
 {
-    "name": "shortlist-digital/agreable-trending-widget-plugin",
-    "description": "A plugin for the trending widget",
+    "name": "shortlist-digital/agreable-trending-posts-widget-plugin",
+    "description": "A plugin for the trending posts widget",
     "type": "wordpress-plugin",
     "license": "MIT",
     "authors": [
@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "AgreableTrendingWidgetPlugin\\": "app/"
+            "AgreableTrendingPostsWidgetPlugin\\": "app/"
         }
     },
     "require": {}
