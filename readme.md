@@ -1,2 +1,2 @@
-# Agreable Trending Widget Plugin
-A plugin for the trending widget
+# Agreable Trending Widget Posts Plugin
+A plugin for the trending posts widget
