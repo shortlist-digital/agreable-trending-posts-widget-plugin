@@ -2,8 +2,7 @@
 
 $key = 'widget_trending_posts';
 $widgetplacement = self::$config['tab_placement'];
-$post_types = get_post_types( array( 'public' => true ) );
-unset( $post_types["attachment"] );
+$post_types = self::$config['post_types'];
 
 $widget_config = array (
   'key' => $key,
