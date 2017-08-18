@@ -44,7 +44,18 @@ $widget_config = array (
       'label' => 'Advanced Details',
       'type' => 'tab',
       'placement' => $widgetplacement,
-    )
+    ),
+	array (
+		'key' => $key . '_limit',
+		'name' => 'limit',
+		'label' => 'Limit',
+		'type' => 'number',
+		'default_value' => 5,
+		'instructions' => 'DO NOT TOUCH, if you can see this, should be hidden',
+		'wrapper' => array(
+			'class' => 'acf-hide',
+		),
+	),
   )
 );
 
