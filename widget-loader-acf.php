@@ -16,46 +16,23 @@ $widget_config = array (
       'type' => 'tab',
       'placement' => $widgetplacement,
     ),
-    array (
-      'key' => $key . '_lists',
-      'label' => 'Lists',
-      'name' => 'lists',
-      'type' => 'post_object',
-      'post_type' => array (
-        0 => 'list',
-      ),
-      'multiple' => 1,
-      'return_format' => 'object',
-      'ui' => 1,
-    ),
-    array (
-      'key' => $key . '_posts_manual',
-      'label' => 'Manually insert content (Posts or Tiles)',
-      'name' => 'posts',
-      'type' => 'post_object',
-      'post_type' => $post_types,
-      'allow_null' => 1,
-      'multiple' => 1,
-      'return_format' => 'object',
-      'ui' => 1,
-    ),
+	array (
+		'key' => $key . '_tags_manual',
+		'label' => 'Trending Posts Category',
+		'name' => 'tags_manual',
+		'type' => 'taxonomy',
+		'taxonomy' => 'category',
+		'field_type' => 'select',
+		'add_term' => 0,
+		'save_terms' => 0,
+		'return_format' => 'object'
+	),
 	array (
       'key' => $key . '_advanced_details_tab',
       'label' => 'Advanced Details',
       'type' => 'tab',
       'placement' => $widgetplacement,
-    ),
-	array (
-		'key' => $key . '_limit',
-		'name' => 'limit',
-		'label' => 'Limit',
-		'type' => 'number',
-		'default_value' => 5,
-		'instructions' => 'DO NOT TOUCH, if you can see this, should be hidden',
-		'wrapper' => array(
-			'class' => 'acf-hide',
-		),
-	),
+    )
   )
 );
 
